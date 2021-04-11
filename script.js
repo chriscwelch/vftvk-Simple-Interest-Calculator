@@ -1,3 +1,5 @@
+// version 2
+
 function compute() {
     let principal = document.querySelector('#principal').value
     let interest = document.querySelector('#rate').value
