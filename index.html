@@ -1,22 +1,37 @@
 <html>
     <head>
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <article>
         <h1>Simple Interest Calculator</h1>
         <fieldset class="interest-calculator-form">
             <legend>Enter values here to calculate the interest</legend>
-                <label for="principal" class="input-label">Amount</label>
-                <input type="number"  id="principal" placeholder="enter amount here">
-                <label for="rate" class="input-label">Rate</label> 
-                <input type="number"  id="rate" placeholder="enter rate here">
-                <label for="years">No. of Years</label>
-                <input type="number"  id="years" placeholder="enter years here">
-                <p>Here is your result</p>
-                Interest : <span id="result"></span><br>
+                <div class="input-div">
+                    <label for="principal" class="input-label">Amount</label>
+                    <input type="number"  id="principal">
+                </div>
+                <div class="input-div">
+                    <label for="rate" class="input-label">Rate</label> 
+                    <input type="range"  id="rate" min="0" max="12" step="0.1">
+                    <span id="rate-value"></span>
+                </div>
+                <div class="input-div">
+                    <label for="years">No. of Years</label>
+                    <input type="number"  id="years" placeholder="enter years here">
+                </div>
 
                 <button onclick="compute()">Compute</button>
+
+                <div id="result">
+                    <p>Here is your result</p>
+                </div>
+
+
+
         </fieldset>
+    </article>
+    <script src="script.js"></script>
     </body>
 </html>
