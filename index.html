@@ -7,9 +7,13 @@
         <h1>Simple Interest Calculator</h1>
         <fieldset class="interest-calculator-form">
             <legend>Enter values here to calculate the interest</legend>
-                Amount <input type="number"  id="principal">  <br/>
-                Rate <input type="number"  id="rate">  <br/>
-                No. of Years <input type="number"  id="years">  <br/>
+                <label for="principal" class="input-label">Amount</label>
+                <input type="number"  id="principal" placeholder="enter amount here">
+                <label for="rate" class="input-label">Rate</label> 
+                <input type="number"  id="rate" placeholder="enter rate here">
+                <label for="years">No. of Years</label>
+                <input type="number"  id="years" placeholder="enter years here">
+                <p>Here is your result</p>
                 Interest : <span id="result"></span><br>
 
                 <button onclick="compute()">Compute</button>
