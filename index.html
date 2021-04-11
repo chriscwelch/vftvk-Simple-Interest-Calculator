@@ -5,12 +5,14 @@
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
+        <fieldset class="interest-calculator-form">
+            <legend>Enter values here to calculate the interest</legend>
+                Amount <input type="number"  id="principal">  <br/>
+                Rate <input type="number"  id="rate">  <br/>
+                No. of Years <input type="number"  id="years">  <br/>
+                Interest : <span id="result"></span><br>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+                <button onclick="compute()">Compute</button>
+        </fieldset>
     </body>
 </html>
