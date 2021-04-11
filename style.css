@@ -1,24 +1,40 @@
-body {background-color:white;}
+body {
+    background-color:white;
+}
 
 article {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-h1{color:grey;}
+
+form {
+    border: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color:grey;
+}
+
 .interest-calculator-form {
   display: flex;
   flex-direction: column;
 }
+
 label {
   width: 150px;
 }
+
 button {
-    width: 30%;
+    width: fit-content;
     margin-bottom: 10px;
 }
+
 .input-div {
     display: flex;
     width: 90%;
