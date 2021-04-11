@@ -5,16 +5,16 @@ function compute() {
     let interestDue = +principal * (+interest/100) * +term;
     let payYear = +2021 + Number(term)
     
-    let text = `If you deposit $${principal},\n at an interest rate of ${interest}%,\nfor ${term} years you will get interest of $${interestDue},\nin the year ${payYear}.`
+    let text = `<p>If you deposit $<mark>${principal}</mark.,\n at an interest rate of <mark>${interest}</mark>%,\nfor <mark>${term}</mark> years you will get interest of $<mark>${interestDue}</mark>,\nin the year <mark>${payYear}</mark>.</p>`
     
     let result = document.querySelector('#result')
 
-    if (principal && term) {
+    if (principal > 1 && term > 1) {
         result.innerHTML = ""
-        result.textContent = text;
+        result.innerHTML = text;
     } else {
         result.innerHTML = ""
-        result.textContent = "Please ensure an amount and term have been given."
+        result.innerHTML = "<p>Please ensure an amount and term have been given\n and that they are positive numbers.</p>"
     }
     
 }
